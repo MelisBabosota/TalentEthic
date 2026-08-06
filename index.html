@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentEthic AI - Selección de Personal Ética</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header class="navbar">
+        <div class="logo">TalentEthic <span>AI</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#demo">Demo Algoritmo</a></li>
+                <li><a href="#calculadora">Calculadora ROI</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#compromiso" class="btn-nav">Nuestro Compromiso Ético</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="badge">Analítica Predictiva y Big Data para RRHH</span>
+            <h1>Selección de personal objetiva, transparente y libre de sesgos.</h1>
+            <p>Optimizamos el filtrado de talento mediante Inteligencia Artificial diseñada bajo principios de estricta responsabilidad moral y respeto a la dignidad humana.</p>
+            <div class="hero-buttons">
+                <a href="#demo" class="btn-primary">Probar Simulador Ciego</a>
+                <a href="#compromiso" class="btn-secondary">Leer Compromiso Ético</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios" class="section">
+        <h2 class="section-title">Servicios Disruptivos</h2>
+        <p class="section-subtitle">Tecnología de punta diseñada como herramienta de asistencia, nunca de sustitución humana.</p>
+        
+        <div class="cards-grid">
+            <div class="card">
+                <div class="icon">🛡️</div>
+                <h3>Screening Algorítmico Ciego</h3>
+                <p>Procesa miles de CVs omitiendo automáticamente datos sociodemográficos sensibles (edad, género, foto, dirección) para evaluar únicamente habilidades y mérito.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📈</div>
+                <h3>Analítica Predictiva de Desempeño</h3>
+                <p>Modela el nivel de compatibilidad técnica y cultural con la vacante, estimando el potencial de desarrollo sin invadir la esfera privada del candidato.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔍</div>
+                <h3>Portal de Transparencia</h3>
+                <p>Plataforma para que los aspirantes consulten los criterios con los que fueron evaluados y soliciten revisiones humanas en caso de detectar discrepancias.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEMO INTERACTIVO: SIMULADOR ALGORÍTMICO -->
+    <section id="demo" class="section bg-alt">
+        <h2 class="section-title">Demostración: Screening Ciego en Tiempo Real</h2>
+        <p class="section-subtitle">Mira cómo nuestro algoritmo extrae competencias y bloquea datos sesgados.</p>
+
+        <div class="demo-container">
+            <div class="demo-box input-box">
+                <h3>1. Curriculum Ingresado (Vista Raw)</h3>
+                <div class="cv-preview">
+                    <p><strong>Nombre:</strong> María Fernando Ruiz</p>
+                    <p><strong>Edad:</strong> 42 años | <strong>Género:</strong> Femenino</p>
+                    <p><strong>Ubicación:</strong> Zona Oriente (CDMX)</p>
+                    <p><strong>Experiencia:</strong> 8 años en Desarrollo Python, SQL Server y AWS.</p>
+                    <p><strong>Educación:</strong> Lic. en Ciencias de la Computación.</p>
+                </div>
+            </div>
+
+            <div class="demo-box output-box">
+                <h3>2. Procesamiento Ético TalentEthic AI</h3>
+                <div class="cv-processed">
+                    <p><span class="tag-red">[BLOQUEADO POR SESGO]</span> Nombre, Edad, Género, Ubicación.</p>
+                    <p><span class="tag-green">[EVALUADO POR MÉRITO]</span> Exp. Python/SQL/AWS: <strong>94/100</strong></p>
+                    <p><span class="tag-green">[EVALUADO POR MÉRITO]</span> Grado Académico Compatibilidad: <strong>90/100</strong></p>
+                    <hr>
+                    <p><strong>Dictamen Sugerido:</strong> Candidata Altamente Cualificada para Entrevista Humana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULADORA DE ROI Y AHORRO ÉTICO -->
+    <section id="calculadora" class="section">
+        <h2 class="section-title">Calculadora de Eficiencia e Impacto</h2>
+        <p class="section-subtitle">Estima cuánto tiempo de revisión manual ahorrará tu equipo de RRHH.</p>
+
+        <div class="calc-card">
+            <div class="calc-group">
+                <label for="cvs">Número de CVs recibidos al mes:</label>
+                <input type="number" id="cvs" value="500" min="50" step="50">
+            </div>
+            <div class="calc-results">
+                <div class="res-item">
+                    <span class="res-num" id="horas-ahorro">125</span>
+                    <span class="res-label">Horas/hombre ahorradas al mes</span>
+                </div>
+                <div class="res-item">
+                    <span class="res-num" id="sesgo-red">0%</span>
+                    <span class="res-label">Riesgo de sesgo por origen o género</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRECIOS (JUSTICIA CONMUTATIVA) -->
+    <section id="precios" class="section bg-alt">
+        <h2 class="section-title">Modelo de Precios: Justicia Conmutativa</h2>
+        <p class="section-subtitle">Tarifas equivalentes al valor real ofrecido. Cero abusos por asimetría de información.</p>
+
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Plan Startup</h3>
+                <div class="price">$150 <span>USD / mes</span></div>
+                <ul>
+                    <li>✓ Hasta 5 vacantes activas/mes</li>
+                    <li>✓ Evaluación algorítmica ciega</li>
+                    <li>✓ Parches de seguridad e IA incluidos</li>
+                    <li>✓ Reportes de trazabilidad ética</li>
+                </ul>
+                <button class="btn-card">Contratar Plan</button>
+            </div>
+            <div class="price-card featured">
+                <span class="pop-badge">Más Elegido</span>
+                <h3>Plan Enterprise</h3>
+                <div class="price">$450 <span>USD / mes</span></div>
+                <ul>
+                    <li>✓ Vacantes ilimitadas</li>
+                    <li>✓ Analítica predictiva avanzada</li>
+                    <li>✓ Auditoría continua de no-discriminación</li>
+                    <li>✓ Soporte para peritaje humano</li>
+                </ul>
+                <button class="btn-primary">Contratar Plan</button>
+            </div>
+        </div>
+
+        <div class="ethics-note">
+            <p><strong>Garantía de Justicia Conmutativa:</strong> En TalentEthic AI no cobramos cargos adicionales por parches de ciberseguridad, cifrado de datos ni auditorías de sesgo. Consideramos que la ética y la protección del cliente son estándares básicos obligatorios, no lujos comerciales.</p>
+        </div>
+    </section>
+
+    <!-- CASOS DE ÉXITO Y TESTIMONIOS -->
+    <section class="section">
+        <h2 class="section-title">Empresas que confían en una IA Transparente</h2>
+        <div class="testimonials-grid">
+            <div class="card testimonial">
+                <p>"Redujimos el tiempo de preselección a la mitad y aumentamos en un 35% la diversidad de género en nuestro equipo de desarrollo técnico."</p>
+                <strong>— Valeria Gómez, Directora de Talent Acquisition</strong>
+            </div>
+            <div class="card testimonial">
+                <p>"La auditoría de explicabilidad nos da la paz mental de saber que no estamos discriminando por accidente. Totalmente recomendado."</p>
+                <strong>— Carlos Mendoza, VP de People Operations</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRIVACIDAD -->
+    <section id="privacidad" class="section bg-alt">
+        <h2 class="section-title">Política de Privacidad y Manejo de Datos</h2>
+        <p class="section-subtitle">Entendemos la información personal como un Depósito de Confianza y Secreto Profesional.</p>
+
+        <div class="cards-grid">
+            <div class="card border-left">
+                <h3>Depósito de Confianza</h3>
+                <p>Los datos ingresados por candidatos y empresas no se consideran activos comercializables. Queda estrictamente prohibida la venta, renta o uso de la base de datos para entrenamiento de modelos de terceros.</p>
+            </div>
+            <div class="card border-left">
+                <h3>Cifrado y Anonimización</h3>
+                <p>Toda la información se encripta bajo estándares bancarios (AES-256) en reposo y en tránsito, desvinculando la identidad del titular durante la fase analítica.</p>
+            </div>
+            <div class="card border-left">
+                <h3>Derecho al Olvido Automatizado</h3>
+                <p>Una vez concluido el proceso de selección, los expedientes de los candidatos no seleccionados son eliminados automáticamente en 30 días, salvo autorización explícita.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN FAQ ACORDEÓN -->
+    <section id="faq" class="section">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">¿El software toma la decisión de despedir o contratar gente? <span>+</span></button>
+                <div class="faq-answer">
+                    <p>No. En TalentEthic AI respetamos la soberanía humana. El sistema solo genera un score de recomendaciones basado en competencias. La decisión final siempre la toma un reclutador humano.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Qué pasa si un candidato siente que fue descartado injustamente? <span>+</span></button>
+                <div class="faq-answer">
+                    <p>A través de nuestro Portal de Transparencia, cualquier aspirante puede solicitar un reporte explicativo del score obtenido o solicitar una revisión manual de su caso.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Cómo evitan que el algoritmo aprenda conductas discriminatorias? <span>+</span></button>
+                <div class="faq-answer">
+                    <p>Realizamos auditorías de sesgo mensuales utilizando pruebas estadísticas para garantizar que la tasa de recomendación sea equitativa entre diferentes grupos demográficos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DESTACADA: NUESTRO COMPROMISO ÉTICO -->
+    <section id="compromiso" class="section compromiso-container">
+        <div class="compromiso-box">
+            <h2>Nuestro Compromiso Ético</h2>
+            <p class="lead">Declaración explícita ante nuestros clientes, usuarios y la sociedad.</p>
+            
+            <div class="commitments-list">
+                <div class="item">
+                    <h4>1. Primacía de la Decisión Humana (Soberanía)</h4>
+                    <p>La IA asesora y sugiere, pero <strong>nunca toma decisiones definitivas de contratación</strong>. La decisión final siempre recae en un ser humano responsable.</p>
+                </div>
+                <div class="item">
+                    <h4>2. Explicabilidad Algorítmica (No "Cajas Negras")</h4>
+                    <p>Rechazamos los modelos opacos. Se puede solicitar el desglose del puntaje obtenido, conociendo con exactitud qué ponderadores se aplicaron.</p>
+                </div>
+                <div class="item">
+                    <h4>3. Auditorías Antisesgo Periódicas</h4>
+                    <p>Sometemos nuestros algoritmos a revisiones técnicas mensuales para prevenir la reproducción involuntaria de sesgos históricos.</p>
+                </div>
+                <div class="item">
+                    <h4>4. Mecanismo de Reclamación Directo</h4>
+                    <p>Garantizamos el derecho de todo candidato a objetar la evaluación algorítmica y solicitar la revisión íntegra y manual de su expediente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>TalentEthic AI</strong> &copy; 2026 - Plataforma Ética de Analítica Predictiva para Recursos Humanos.</p>
+        <p class="subfooter">Proyecto desarrollado para evaluación de Ética Profesional | Mtro. Aguilar</p>
+    </footer>
+
+    <!-- JAVASCRIPT INTEGRADO PARA FUNCIONALIDAD -->
+    <script>
+        // 1. Calculadora de Horas/Hombre Ahorradas
+        const inputCvs = document.getElementById('cvs');
+        const outputHoras = document.getElementById('horas-ahorro');
+
+        inputCvs.addEventListener('input', () => {
+            const val = parseInt(inputCvs.value) || 0;
+            // Promedio: 15 min (0.25 hrs) por CV revisado manualmente
+            const ahorro = Math.round(val * 0.25);
+            outputHoras.textContent = ahorro;
+        });
+
+        // 2. Acordeón de FAQ
+        const faqButtons = document.querySelectorAll('.faq-question');
+
+        faqButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const answer = btn.nextElementSibling;
+                const span = btn.querySelector('span');
+
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    span.textContent = '+';
+                } else {
+                    answer.style.display = 'block';
+                    span.textContent = '-';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
