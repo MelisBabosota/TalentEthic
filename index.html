@@ -12,9 +12,14 @@
 <body>
 
     <!-- NAVEGACIÓN -->
-    <header class="navbar">
+<header class="navbar">
         <div class="logo">TalentEthic <span>AI</span></div>
-        <nav>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
@@ -260,7 +265,27 @@
             outputHoras.textContent = ahorro;
         });
 
-        // 2. Acordeón de FAQ
+// 2. Menú Hamburguesa (Móvil)
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !expanded);
+        });
+
+        // Cerrar el menú al hacer clic en un enlace (móvil)
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // 3. Acordeón de FAQ
         const faqButtons = document.querySelectorAll('.faq-question');
 
         faqButtons.forEach(btn => {
