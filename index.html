@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TalentEthic AI - Selección de Personal Ética</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -12,14 +12,9 @@
 <body>
 
     <!-- NAVEGACIÓN -->
-<header class="navbar">
+    <header class="navbar">
         <div class="logo">TalentEthic <span>AI</span></div>
-        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav id="nav-menu">
+        <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
@@ -265,27 +260,7 @@
             outputHoras.textContent = ahorro;
         });
 
-// 2. Menú Hamburguesa (Móvil)
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
-            hamburger.setAttribute('aria-expanded', !expanded);
-        });
-
-        // Cerrar el menú al hacer clic en un enlace (móvil)
-        navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
-            });
-        });
-
-        // 3. Acordeón de FAQ
+        // 2. Acordeón de FAQ
         const faqButtons = document.querySelectorAll('.faq-question');
 
         faqButtons.forEach(btn => {
